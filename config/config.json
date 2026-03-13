@@ -1,0 +1,24 @@
+{
+  "translation_language": "Turkish",
+  "source_language": "en",
+  "translation_endpoint": "http://127.0.0.1:11434/api/generate",
+  "translation_model": "qwen2.5:14b",
+  "max_chunk_size": 2000,
+  "threads": 1,
+  "log_level": "INFO",
+  "retry_count": 3,
+  "retry_delay": 5,
+  "request_timeout": 120,
+  "keys_file": "hactool/keys/prod.keys",
+  "title_keys_file": "hactool/keys/title.keys",
+  "tools": {
+    "hactool": "hactool/hactool.exe",
+    "hactoolnet": "tools/hactoolnet",
+    "msbt_tool": "tools/msbt_tool",
+    "sarc_tool": "tools/sarc_tool"
+  },
+  "text_extensions": [".msbt", ".bmg", ".json", ".csv", ".xml", ".txt", ".yaml", ".yml"],
+  "sarc_extensions": [".sarc", ".szs", ".pack", ".arc"],
+  "skip_filenames": ["buildinfo", "version"],
+  "min_binary_string_length": 4
+}

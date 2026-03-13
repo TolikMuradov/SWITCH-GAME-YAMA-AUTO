@@ -1,0 +1,1 @@
+"""switch-translator source package."""
